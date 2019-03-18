@@ -58,4 +58,5 @@ def runner
   
   until sum > 21
   end_game
+  end
 end
