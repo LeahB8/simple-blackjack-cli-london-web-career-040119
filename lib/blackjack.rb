@@ -51,13 +51,12 @@ end
 
 def runner
   welcome
-  deal_card
+  initial_round
+  hit?(current_card_total)
   display_card_total(card_total)
+  deal_card
   prompt_user
   get_user_input
   end_game(card_total)
-  initial_round
-  hit?(current_card_total)
-  invalid_command
 end
     
